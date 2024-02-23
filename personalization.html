@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main your Health</title>
+    <link rel="stylesheet" href="personalization.css">
+</head>
+<body>
+    <header>
+        <h1>Maintaining your Personal Well-Being</h1>
+    </header>
+    <main>
+        <section id="activities">
+            <h2>Track Your Time</h2>
+            <form id="timeForm">
+                <div class="activity">
+                    <label for="officeWork">Time spent on Office Work (hours):</label>
+                    <input type="number" id="officeWork" name="officeWork" min="0" step="0.5" required>
+                </div>
+                <div class="activity">
+                    <label for="socialMedia">Time spent on Social Media (hours):</label>
+                    <input type="number" id="socialMedia" name="socialMedia" min="0" step="0.5" required>
+                </div>
+                <div class="activity">
+                    <label for="fitness">Time spent on Fitness (hours):</label>
+                    <input type="number" id="fitness" name="fitness" min="0" step="0.5" required>
+                </div>
+                <div class="activity">
+                    <label for="skincare">Time spent on Skincare (hours):</label>
+                    <input type="number" id="skincare" name="skincare" min="0" step="0.5" required>
+                </div>
+                <div class="activity">
+                    <label for="lovedOnes">Time spent with Loved Ones (hours):</label>
+                    <input type="number" id="lovedOnes" name="lovedOnes" min="0" step="0.5" required>
+                </div>
+                <div id="customModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <p id="modalMessage"></p>
+                    </div>
+                  </div>
+            </form>
+            <form id="timeForm" onsubmit="checkTimeSpent(); return false;">
+                <!-- Your form inputs here -->
+                <button type="submit">Submit</button>
+            </form>
+            
+        </section>
+        <section id="results">
+            <!-- Results display goes here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Time Management Tracker</p>
+    </footer>
+    <script src="personalization.js"></script>
+</body>
+</html>
