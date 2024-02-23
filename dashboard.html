@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Wellness Dashboard</title>
+    <link rel="stylesheet" href="dashboardstyle.css">
+    <!-- Include Chart.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <!-- Include jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="dashboard.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-options">
+            <h2>Dashboard Options</h2>
+            <button class='glowing-btn'><span class='glowing-txt'>C<span class='faulty-letter'>L</span>ICK</span></button>
+        </div>
+        <div class="dashboard-metrics">
+            <h2>Employee Wellness Metrics</h2>
+            <div class="metric-row">
+                <div class="canvas-container">
+                    <canvas id="screenTimeChart"></canvas>
+                    <div class="canvas-name">Screen Time</div>
+                </div>
+                <div class="canvas-container">
+                    <canvas id="eyeStrainChart"></canvas>
+                    <div class="canvas-name">Eye Strain Levels</div>
+                </div>
+            </div>
+            <div class="metric-row">
+                <div class="canvas-container">
+                    <canvas id="postureChart"></canvas>
+                    <div class="canvas-name">Posture</div>
+                </div>
+                <div class="canvas-container">
+                    <canvas id="noiseLevelsChart"></canvas>
+                    <div class="canvas-name">Ambient Noise Levels</div>
+                </div>
+            </div>
+            <div class="metric-row">
+                <div class="canvas-container">
+                    <canvas id="emotionalWellbeingChart"></canvas>
+                    <div class="canvas-name">Emotional Well Being</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
